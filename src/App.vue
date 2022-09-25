@@ -16,9 +16,19 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
+
+<!--
+@import "./css/generics.scss";
+@import "./css/variables.scss";
+@import "@/css/position.scss"; 
+@import "@/css/display.scss";
+@import "@/css/flex.scss";
+@import "@/css/grid.scss"; 
+-->

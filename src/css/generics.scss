@@ -1,0 +1,58 @@
+.scroll-y {
+  overflow-y: scroll;
+}
+.scroll-x {
+  overflow-x: scroll;
+}
+
+/* gap */
+.gap-0-5 {
+  gap: 0.5rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-1-2 {
+  gap: 1.5rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-3 {
+  gap: 3rem;
+}
+.gap-4 {
+  gap: 4rem;
+}
+.gap-5 {
+  gap: 5rem;
+}
+/* gap */
+
+.float-sx {
+  float: left;
+}
+.float-dx {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.width40 {
+  width: 40%;
+}
+
+/***** /UTILITIES *****/
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
+.w100 {
+  width: 100%;
+}

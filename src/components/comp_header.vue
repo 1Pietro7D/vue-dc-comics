@@ -1,5 +1,7 @@
 <template>
-  <div class="hello">ciao</div>
+  <div>
+    <div class="miao">ciao</div>
+  </div>
 </template>
 
 <script>
@@ -12,4 +14,16 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@import "@/css/variables";
+@import "@/css/generics.scss";
+@import "@/css/position.scss";
+@import "@/css/display.scss";
+@import "@/css/flex.scss";
+@import "@/css/grid.scss";
+.miao {
+  @include absolute-center;
+  color: red;
+  background-color: $blue_brand;
+}
+</style>
