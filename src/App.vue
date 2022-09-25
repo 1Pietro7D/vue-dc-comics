@@ -1,25 +1,20 @@
 <template>
   <div id="app">
     <comp_header />
-    <comp_sect_action />
+    <comp_main />
   </div>
 </template>
 
 <script>
 import comp_header from "./components/comp_header.vue";
-import comp_sect_action from "@/components/comp_sect_action.vue";
-import links from "@/data/header_link";
+import comp_main from "@/components/comp_main.vue";
 
 export default {
   name: "App",
-  data() {
-    return {
-      links,
-    };
-  },
+  data() {},
   components: {
     comp_header,
-    comp_sect_action,
+    comp_main,
   },
 };
 </script>

@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: auto auto auto auto auto;
 }
+
 @mixin grid-col-6 {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;

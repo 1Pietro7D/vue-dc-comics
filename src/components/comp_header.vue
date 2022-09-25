@@ -1,5 +1,5 @@
 <template>
-  <header class="pad-1">
+  <header class="pad-y-1">
     <div class="container-max d-flex j-between container-max align-center">
       <div class="logo_DC">
         <img src="@/assets/img/dc-logo.png" alt="" />
