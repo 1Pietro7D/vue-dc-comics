@@ -2,43 +2,29 @@
   <section class="pad-y-2">
     <div class="container-max">
       <nav class="d-grid">
-        <div class="card">
-          <div class="card_img">
-            <img src="@/assets/img/buy-comics-digital-comics.png" alt="" />
-          </div>
-          <p>DIGITAL COMICS</p>
-        </div>
-        <div class="card">
-          <div class="card_img">
-            <img src="@/assets/img/buy-comics-merchandise.png" alt="" />
-          </div>
-          <p>DC merchandise</p>
-        </div>
-        <div class="card">
-          <div class="card_img">
-            <img src="@/assets/img/buy-comics-subscriptions.png" alt="" />
-          </div>
-          <p>subscription</p>
-        </div>
-        <div class="card">
-          <div class="card_img">
-            <img src="@/assets/img/buy-comics-shop-locator.png" alt="" />
-          </div>
-          <p>comic shop locator</p>
-        </div>
-        <div class="card">
-          <div class="card_img">
-            <img src="@/assets/img/buy-dc-power-visa.svg" alt="" />
-          </div>
-          <p>DC power visa</p>
-        </div>
+        <shop_comp
+          v-for="(card, index) in shop"
+          :key="index"
+          :url="shop[index].url"
+          :text="shop[index].description"
+        />
       </nav>
     </div>
   </section>
 </template>
 
 <script>
-export default { name: "comp_sect_shop" };
+import shop_comp from "./comp_nav_shop.vue";
+import { shop } from "@/data/shop";
+export default {
+  name: "comp_sect_shop",
+  components: { shop_comp },
+  data() {
+    return {
+      shop,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -60,26 +46,6 @@ section {
     }
     @media screen and (max-width: 780px) {
       padding: 2rem 3rem;
-    }
-  }
-  .card {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin: auto;
-    text-transform: uppercase;
-    @media screen and (max-width: 780px) {
-      flex-direction: column;
-    }
-    .card_img {
-      $size: 70px;
-      width: $size;
-      height: $size;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: scale-down;
-      }
     }
   }
 }
