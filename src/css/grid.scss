@@ -1,6 +1,47 @@
 .d-grid {
   display: grid;
 }
+@mixin grid-auto-col-1 {
+  display: grid;
+  grid-template-columns: auto;
+}
+@mixin grid-auto-col-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+@mixin grid-auto-col-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+@mixin grid-auto-col-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+@mixin grid-auto-col-5 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+@mixin grid-auto-col-6 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+@mixin grid-auto-col-7 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+@mixin grid-auto-col-8 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+@mixin grid-auto-col-9 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+@mixin grid-auto-col-10 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
 @mixin grid-col-1 {
   display: grid;
   grid-template-columns: $one;

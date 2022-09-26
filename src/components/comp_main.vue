@@ -2,19 +2,22 @@
   <main>
     <jumbo_tron />
     <comp_sect_action />
+    <comp_sect_shop />
   </main>
 </template>
 
 <script>
-import comp_sect_action from "@/components/comp_sect_action.vue";
 import jumbo_tron from "@/components/jumbo_tron.vue";
+import comp_sect_action from "@/components/comp_sect_action.vue";
+import comp_sect_shop from "@/components/comp_sect_shop.vue";
 
 export default {
   name: "comp_main",
 
   components: {
-    comp_sect_action,
     jumbo_tron,
+    comp_sect_action,
+    comp_sect_shop,
   },
 };
 </script>

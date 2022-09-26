@@ -44,6 +44,11 @@ header {
   background-color: $header_theme;
   font-family: "Fredoka One";
 }
+nav {
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
+}
 
 .logo_DC {
   display: inline-block;

@@ -5,7 +5,7 @@
       <a v-if="!clicked" @click="click" href="#"
         >--> Content goes here &lt;--</a
       >
-      <div id="album" class="grid-col-1 pad-2" v-else>
+      <div id="album" class="d-grid pad-2" v-else>
         <comp_cards
           v-for="(card, index) in cards"
           :key="index"
@@ -56,7 +56,7 @@ section {
     text-decoration: none;
     color: $white_theme;
   }
-  .grid-col-1 {
+  .d-grid {
     @include grid-col-1;
 
     @media screen and (min-width: 480px) {
