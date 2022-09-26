@@ -54,46 +54,46 @@
 
 /** justify-content **/
 
-.j-start {
+.justify-start {
   justify-content: flex-start;
 }
-.j-center {
+.justify-center {
   justify-content: center;
 }
-.j-end {
+.justify-end {
   justify-content: flex-end;
 }
-.j-left {
+.justify-left {
   justify-content: left;
 }
-.j-right {
+.justify-right {
   justify-content: right;
 }
-.j-between {
+.justify-between {
   justify-content: space-between;
 }
 
-.j-around {
+.justify-around {
   justify-content: space-around;
 }
 
-.j-evenly {
+.justify-evenly {
   /* !! is NOT supported by all browser*/
   justify-content: space-evenly;
 }
 
-.j-baseline {
+.justify-baseline {
   justify-content: baseline;
 }
 
-.j-first-baseline {
+.justify-first-baseline {
   justify-content: first baseline;
 }
 
-.j-last-baseline {
+.justify-last-baseline {
   justify-content: last baseline;
 }
-.j-stretch {
+.justify-stretch {
   /* !! NOT supported by flexible boxes (flexbox). */
   justify-content: stretch;
 }

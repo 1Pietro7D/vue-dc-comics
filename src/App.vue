@@ -2,12 +2,14 @@
   <div id="app">
     <comp_header />
     <comp_main />
+    <comp_footer />
   </div>
 </template>
 
 <script>
 import comp_header from "./components/comp_header.vue";
 import comp_main from "@/components/comp_main.vue";
+import comp_footer from "@/components/comp_footer.vue";
 
 export default {
   name: "App",
@@ -15,6 +17,7 @@ export default {
   components: {
     comp_header,
     comp_main,
+    comp_footer,
   },
 };
 </script>

@@ -1,6 +1,8 @@
 <template>
   <header class="pad-y-1">
-    <div class="container-max d-flex j-between container-max align-center">
+    <div
+      class="container-max d-flex justify-between container-max align-center"
+    >
       <div class="logo_DC">
         <img src="@/assets/img/dc-logo.png" alt="" />
       </div>
