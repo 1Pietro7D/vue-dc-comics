@@ -5,21 +5,34 @@
       <a v-if="!clicked" @click="click" href="#"
         >--> Content goes here &lt;--</a
       >
-      <div id="album" class="grid-col-6 pad-y-2" v-else>
-        <div class="cards" v-for="(x, index) in 12" :key="index"></div>
+      <div id="album" class="grid-col-1 pad-2" v-else>
+        <comp_cards
+          v-for="(card, index) in cards"
+          :key="index"
+          :url="cards[index].thumb"
+          :price="cards[index].price"
+          :title="cards[index].series"
+          :type="cards[index].type"
+        />
       </div>
+      <div class="btn_brand" v-if="clicked">LOAD MORE</div>
     </div>
   </section>
 </template>
 
 <script>
+import { cards } from "@/data/dc-comics.js";
+import comp_cards from "@/components/comp_cards.vue";
 export default {
   name: "comp_sect_action",
+
   data() {
     return {
+      cards,
       clicked: false,
     };
   },
+  components: { comp_cards },
   methods: {
     click() {
       return (this.clicked = true);
@@ -43,14 +56,23 @@ section {
     text-decoration: none;
     color: $white_theme;
   }
-  .grid-col-6 {
-    @include grid-col-6;
-    gap: 1rem;
+  .grid-col-1 {
+    @include grid-col-1;
+
+    @media screen and (min-width: 480px) {
+      @include grid-col-2;
+    }
+    @media screen and (min-width: 780px) {
+      @include grid-col-4;
+    }
+    @media screen and (min-width: 1200px) {
+      @include grid-col-6;
+    }
+    @media screen and (max-width: 1200px) {
+      padding: 2rem 3rem;
+    }
   }
-  .cards {
-    height: 50px;
-    background-color: red;
-  }
+
   #current_series {
     background-color: $blue_primary;
     padding: 1rem;
@@ -59,6 +81,13 @@ section {
     position: absolute;
     top: 0px;
     transform: translateY(-50%);
+  }
+  .btn_brand {
+    background-color: $brand_theme;
+    display: inline-block;
+    padding: 0.5rem;
+    /* STRANAMENTE NON RIESCO A CENTRARLO CON IL MARGIN, FORSE FLEX?? */
+    @include relativeX-center;
   }
 }
 </style>

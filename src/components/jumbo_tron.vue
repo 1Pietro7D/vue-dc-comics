@@ -2,7 +2,7 @@
   <div>
     <div v-if="clicked">
       vorrei collegarlo al click su comp_sect_action.vue ... ma niente ...
-      potrei provare alterando le classi.. ma... mmmmm
+      potrei provare alterando le classi.. ma...o con un props???
     </div>
     <div v-else id="jumbo_tron">
       <img src="@/assets/img/jumbotron.jpg" alt="" />
