@@ -1,5 +1,5 @@
 <template>
-  <header class="pad-y-1">
+  <header>
     <div
       class="container-max d-flex justify-between container-max align-center"
     >

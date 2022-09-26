@@ -1,5 +1,5 @@
 <template>
-  <section class="pad-y-2 relative">
+  <section class="relative">
     <div class="container-max">
       <div v-if="clicked" id="current_series">current series</div>
       <a v-if="!clicked" @click="click" href="#"

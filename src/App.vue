@@ -31,6 +31,7 @@ export default {
   box-sizing: border-box;
 }
 .container-max {
+  padding: 2rem;
   max-width: 1200px;
   margin: auto;
 }

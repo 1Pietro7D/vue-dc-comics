@@ -1,5 +1,5 @@
 <template>
-  <section class="pad-y-2">
+  <section>
     <div class="container-max">
       <nav class="d-grid">
         <shop_comp

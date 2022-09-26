@@ -1,9 +1,33 @@
 <template>
   <footer>
-    <nav class="d-flex">
-      <div class="container-max"></div>
-    </nav>
-    <section class="pad-2">
+    <div id="nav-container">
+      <div class="d-flex justify-between container-max pad-0">
+        <nav class="d-flex pad-2 gap-2">
+          <div>
+            <ul>
+              <h2>dc comics</h2>
+              <li></li>
+            </ul>
+            <ul>
+              <h2>shop</h2>
+              <li></li>
+            </ul>
+          </div>
+          <ul>
+            <h2>dc</h2>
+            <li></li>
+          </ul>
+          <ul>
+            <h2>sites</h2>
+            <li></li>
+          </ul>
+        </nav>
+        <div class="jumbo-img">
+          <img src="../assets/img/dc-logo-bg.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <section>
       <div class="container-max d-flex justify-between">
         <div>
           <a href="#">SING UP</a>
@@ -33,10 +57,23 @@ footer {
     text-decoration: none;
     color: $white_theme;
   }
-  nav {
-    height: 600px;
+  #nav-container {
+    $height: 450px;
+    height: $height;
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
+    .jumbo-img {
+      width: 650px;
+      height: $height;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @media screen and (max-width: 1200px) {
+          display: none;
+        }
+      }
+    }
   }
   section {
     background-color: $footer_theme;
